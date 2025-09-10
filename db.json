@@ -700,22 +700,6 @@
     "Password": "h8a_eHhnZ8xKVzV"
   },
   {
-    "Name": "Salman",
-    "Country": "India",
-    "Gender": "Male",
-    "Address": "Goregaon",
-    "Password": "12345",
-    "id": 1757155238884
-  },
-  {
-    "Name": "vikas Rajjak",
-    "Country": "India",
-    "Gender": "Male",
-    "Address": "sabtacruz",
-    "Password": "123456",
-    "id": 1257155257204
-  },
-  {
     "Name": "",
     "Country": "india",
     "Gender": "",
@@ -738,13 +722,5 @@
     "Address": "Kurla East",
     "Password": "Baadshah@786",
     "id": 1757162878971
-  },
-  {
-    "Name": "vikas Rajak",
-    "Country": "india",
-    "Gender": "Male",
-    "Address": "santacruz",
-    "Password": " Royal@2025",
-    "id": 1757163858990
   }
 ]

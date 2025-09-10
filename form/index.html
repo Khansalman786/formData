@@ -6,20 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Form</title>
     <style>
-        body {
-            background: linear-gradient(135deg, #f9fafb, #eef2ff);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: grid;
-            place-items: center;
-            height: 100vh;
-        }
-
         .form-container {
             background: #fff;
             padding: 2.2rem 2.5rem;
             border-radius: 16px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-            width: 370px;
+            /* width: 370px; */
             transition: transform 0.3s;
         }
 
@@ -183,115 +175,72 @@
         }
     </style>
     <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Add this inside <head> before closing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
 </head>
 
 <body>
-    <div class="form-container mb-4">
-        <h2>User Registration</h2>
-        <form id="userForm" action="http://localhost:3000/data" method="POST" novalidate>
+    <div class="row g-3 px-5 pt-4 justify-content-center">
+        <div class="col-md-3">
+            <div class="form-container mb-4">
+                <h2>User Registration</h2>
+                <form id="userForm" action="http://localhost:3000/data" method="POST" novalidate>
 
-            <div class="input-group">
-                <label for="Name">Name</label>
-                <input type="text" id="Name" name="Name" required>
-                <span class="status-icon" id="nameIcon"></span>
-                <div id="nameError" class="error-text"></div>
+                    <div class="input-group">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" name="Name" required>
+                        <span class="status-icon" id="nameIcon"></span>
+                        <div id="nameError" class="error-text"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Country">Country</label>
+                        <input type="text" id="Country" name="Country" required>
+                        <span class="status-icon" id="countryIcon"></span>
+                        <div id="countryError" class="error-text"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Gender">Gender</label>
+                        <select id="Gender" name="Gender" required>
+                            <option value="">Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                        <span class="status-icon" id="genderIcon"></span>
+                        <div id="genderError" class="error-text"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Address">Address</label>
+                        <input type="text" id="Address" name="Address" required>
+                        <span class="status-icon" id="addressIcon"></span>
+                        <div id="addressError" class="error-text"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Password">Password</label>
+                        <input type="password" id="Password" name="Password" required>
+                        <span class="status-icon" id="passwordIcon"></span>
+                        <div class="password-strength">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <div id="passwordError" class="error-text"></div>
+                    </div>
+
+                    <button type="submit" id="submitBtn" disabled>Submit</button>
+                </form>
             </div>
-
-            <div class="input-group">
-                <label for="Country">Country</label>
-                <input type="text" id="Country" name="Country" required>
-                <span class="status-icon" id="countryIcon"></span>
-                <div id="countryError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Gender">Gender</label>
-                <select id="Gender" name="Gender" required>
-                    <option value="">Select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                </select>
-                <span class="status-icon" id="genderIcon"></span>
-                <div id="genderError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Address">Address</label>
-                <input type="text" id="Address" name="Address" required>
-                <span class="status-icon" id="addressIcon"></span>
-                <div id="addressError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Password">Password</label>
-                <input type="password" id="Password" name="Password" required>
-                <span class="status-icon" id="passwordIcon"></span>
-                <div class="password-strength">
-                    <div class="strength-bar" id="strengthBar"></div>
-                </div>
-                <div id="passwordError" class="error-text"></div>
-            </div>
-
-            <button type="submit" id="submitBtn" disabled>Submit</button>
-        </form>
-
-        <form id="userForm" action="http://localhost:3000//user:id" method="POST" novalidate>
-
-            <div class="input-group">
-                <label for="Name">Name</label>
-                <input type="text" id="Name" name="Name" required>
-                <span class="status-icon" id="nameIcon"></span>
-                <div id="nameError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Country">Country</label>
-                <input type="text" id="Country" name="Country" required>
-                <span class="status-icon" id="countryIcon"></span>
-                <div id="countryError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Gender">Gender</label>
-                <select id="Gender" name="Gender" required>
-                    <option value="">Select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                </select>
-                <span class="status-icon" id="genderIcon"></span>
-                <div id="genderError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Address">Address</label>
-                <input type="text" id="Address" name="Address" required>
-                <span class="status-icon" id="addressIcon"></span>
-                <div id="addressError" class="error-text"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="Password">Password</label>
-                <input type="password" id="Password" name="Password" required>
-                <span class="status-icon" id="passwordIcon"></span>
-                <div class="password-strength">
-                    <div class="strength-bar" id="strengthBar"></div>
-                </div>
-                <div id="passwordError" class="error-text"></div>
-            </div>
-
-            <button type="submit" id="submitBtn" disabled>Submit</button>
-        </form>
+        </div>
 
 
     </div>
 
     <div class="d-flex justify-content-start mt-3">
-        <button type="button" class="btn btn-primary px-3" id="exportBtn">Excel</button>
+        <button type="button" class="btn btn-primary px-3" style="width: 200px;" id="exportBtn">Excel</button>
     </div>
 
 
@@ -304,6 +253,7 @@
                 <th>Gender</th>
                 <th>Address</th>
                 <th>Password</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="userTableBody">
@@ -402,6 +352,10 @@
         });
 
 
+
+
+
+
         // Fetch and render table data from backend
         function renderTable() {
             fetch('http://localhost:3000/users')
@@ -418,6 +372,28 @@
                         <td>${user.Gender}</td>
                         <td>${user.Address}</td>
                         <td>${user.Password}</td>
+                          <td>
+                                <!-- Edit Button -->
+                                <button type="button" 
+                                    class="btn btn-sm btn-primary editBtn" 
+                                    data-id="${user.id}" 
+                                    data-name="${user.Name}" 
+                                    data-country="${user.Country}" 
+                                    data-gender="${user.Gender}" 
+                                    data-address="${user.Address}" 
+                                    data-password="${user.Password}" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#editModal">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <!-- Delete Button -->
+                                <button type="button" class="btn btn-sm btn-danger deleteBtn"
+                                    data-id="${user.id}"
+                                    data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
                     `;
                         tbody.appendChild(row);
                     });
@@ -439,6 +415,149 @@
             XLSX.writeFile(wb, "users.xlsx");
         });
     </script>
+
+
+
+
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="editForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Edit User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="editId">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" id="editName">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <input type="text" class="form-control" id="editCountry">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <select class="form-control" id="editGender">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" id="editAddress">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="text" class="form-control" id="editPassword">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this item?
+                    <input type="hidden" id="deleteId"> <!-- store id -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Open modal with user data
+        document.addEventListener("click", function (e) {
+            if (e.target.closest(".editBtn")) {
+                const btn = e.target.closest(".editBtn");
+                document.getElementById("editId").value = btn.dataset.id;
+                document.getElementById("editName").value = btn.dataset.name;
+                document.getElementById("editCountry").value = btn.dataset.country;
+                document.getElementById("editGender").value = btn.dataset.gender;
+                document.getElementById("editAddress").value = btn.dataset.address;
+                document.getElementById("editPassword").value = btn.dataset.password;
+            }
+        });
+
+        // Save updated data
+        document.getElementById("editForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const id = document.getElementById("editId").value;
+            const updatedUser = {
+                Name: document.getElementById("editName").value,
+                Country: document.getElementById("editCountry").value,
+                Gender: document.getElementById("editGender").value,
+                Address: document.getElementById("editAddress").value,
+                Password: document.getElementById("editPassword").value,
+            };
+
+            fetch(`http://localhost:3000/user/${id}`, {   // ✅ matches backend route
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(updatedUser),
+            })
+                .then(res => {
+                    if (!res.ok) throw new Error("Update failed");
+                    return res.json();
+                })
+                .then(() => {
+                    renderTable(); // refresh table after update
+                    bootstrap.Modal.getInstance(document.getElementById("editModal")).hide();
+                })
+                .catch(err => console.error(err));
+        });
+
+
+
+
+
+        // Open delete modal and store id
+        document.addEventListener("click", function (e) {
+            if (e.target.closest(".deleteBtn")) {
+                const btn = e.target.closest(".deleteBtn");
+                document.getElementById("deleteId").value = btn.dataset.id;
+            }
+        });
+
+        // Confirm delete
+        document.getElementById("confirmDelete").addEventListener("click", function () {
+            const id = document.getElementById("deleteId").value;
+
+            fetch(`http://localhost:3000/user/${id}`, {
+                method: "DELETE",
+            })
+                .then(res => {
+                    if (!res.ok) throw new Error("Delete failed");
+                    return res.json();
+                })
+                .then(() => {
+                    renderTable(); // refresh
+                    bootstrap.Modal.getInstance(document.getElementById("deleteModal")).hide();
+                })
+                .catch(err => console.error(err));
+        });
+    </script>
+
 </body>
 
 </html>

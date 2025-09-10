@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from "fs";
 import cors from "cors";
 const app = express();
 app.use(cors());
+// Connect whith Database
 
 const port = 3000;
 const dbFile = "./db.json";
@@ -48,7 +49,7 @@ app.post("/data", (req, res) => {
   res.send(newData);
 });
 
-app.put("/user:id", (req, res) => {
+app.put("/user/:id", (req, res) => {
   const id = req.params.id;
   const data = req.body;
   const index = db.findIndex((item) => item.id == id);
@@ -60,7 +61,7 @@ app.put("/user:id", (req, res) => {
   res.send(db[index]);
 });
 
-app.delete("/:id", (req, res) => {
+app.delete("/user/:id", (req, res) => {
   const id = req.params.id;
   const index = db.findIndex((item) => item.id == id);
   if (index === -1) {

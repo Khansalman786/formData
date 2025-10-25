@@ -1,0 +1,399 @@
+.accordion-body {
+    padding: 10px 37px !important;
+    /* padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x); */
+}
+
+.accordion-body a {
+    transition: color 0.3s ease;
+}
+
+.accordion-body a:hover {
+    color: #E85454;
+}
+
+.accordion-collapse {
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E85454;
+    /* Active background */
+    color: #fff;
+    /* Active text color */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+.orderform-box a {
+    color: #343a40;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.orderform-box a:hover {
+    color: #dc3545;
+    text-decoration: none;
+    transform: translateX(4px);
+}
+
+.orderform-box {
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.orderform-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+.accordion-body {
+    padding: 10px 37px !important;
+    /* padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x); */
+}
+
+.accordion-body a {
+    transition: color 0.3s ease;
+}
+
+.accordion-body a:hover {
+    color: #E85454;
+}
+
+.accordion-collapse {
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E85454;
+    /* Active background */
+    color: #fff;
+    /* Active text color */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-family: 'Helvetica Neue';
+    font-size: 18px !important;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: var(--tp-text-body);
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+.orderform-box a {
+    color: #343a40;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.orderform-box a:hover {
+    color: #dc3545;
+    text-decoration: none;
+    transform: translateX(4px);
+}
+
+.orderform-box {
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.orderform-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.ceo-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.breadcrumb-section {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.about-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: #D42B31;
+}
+
+.highlight {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 13px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.about-list i {
+    color: #D42B31;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #D42B31;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #D42B31;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.site-breadcrumb {
+    border-bottom: 1px solid #ddd;
+}
+
+.mt-20 {
+    margin-top: 80px !important;
+}
+
+.our-team {
+    text-align: center;
+    position: relative;
+}
+
+.our-team:hover {
+    cursor: pointer;
+}
+
+.our-team img {
+    width: 100%;
+    height: auto;
+}
+
+.our-team .team-content {
+    width: 100%;
+    height: auto;
+    background: #ecdfbd;
+    padding: 15px 0;
+    border-left: 5px solid #fb6648;
+    box-shadow: 0 15px 25px 0 rgba(3, 7, 15, 0.1);
+    position: absolute;
+    bottom: -67;
+    right: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .team-content {
+    background: #d42b31;
+}
+
+.our-team .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5e3448;
+    text-transform: capitalize;
+    margin: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .title {
+    color: #ecdfbd;
+    margin-bottom: 10px;
+}
+
+.our-team .post {
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    color: #fb6648;
+    text-transform: capitalize;
+    height: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .post {
+    height: 40px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.our-team .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-60%);
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+    transform: translateY(50%);
+    opacity: 1;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ecdfbd;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #5e3448;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team .social li a:hover {
+    color: #ecdfbd;
+    background: #5e3448;
+}
+
+@media only screen and (max-width: 990px) {
+    .our-team {
+        margin-bottom: 74px;
+    }
+
+    .mt-20 {
+        margin-top: 50px !important;
+    }
+
+}
+
+.Download-bron {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tp-blog-list-thumb {
+    width: 100% !important;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.tp-blog-list-thumb img {
+    /* max-width: 100%; */
+    width: 100% !important;
+    height: 100%;
+}
+
+.bg-light12 {
+    background-color: white;
+}

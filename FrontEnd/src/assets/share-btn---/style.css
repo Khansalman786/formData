@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.share-wrapper {
+  /* float: right; */
+  position: relative;
+  margin-bottom: 20px;
+  /* top: 178px;
+  right: 154px; */
+
+}
+
+.share-wrapper .share {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  color: #181515;
+  /* background-color: #F36B21; */
+  text-align: center;
+  /* line-height: 2.1; */
+  font-size: 23px;
+  cursor: pointer;
+  /* margin-bottom: 15px; */
+  transition: background-color 0.4s;
+}
+
+.share-wrapper .share.active {
+  /* background-color: #000; */
+}
+
+.share-wrapper .share.active:before {
+  content: "";
+}
+
+.share-wrapper .share.active+.social li {
+  transform: scale(1);
+}
+
+.share-wrapper .share.active+.social li:hover {
+  transform: scale(1.1);
+}
+
+.share-wrapper ul.social {
+  opacity: 0;
+  visibility: hidden;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transform: translate(-3rem, 3rem);
+  transition: visibility 0.4s, opacity 0.4s, -webkit-transform 0.4s;
+}
+
+.share-wrapper ul.social.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+  /* height: 50px;
+
+} */
+
+  height: 90px;
+}
+
+.share-wrapper ul.social li {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  /* color: #FFF; */
+  background-color: #FFF;
+  text-align: center;
+  line-height: 2.1;
+  font-size: 56px;
+  cursor: pointer;
+  /* margin-bottom: 15px; */
+  box-shadow: 0.5px 0.87px 4px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+  transform: scale(0.4);
+}
+
+.share-wrapper ul.social li .facebook {
+  color: #3A589E;
+}
+
+.share-wrapper ul.social li .twitter {
+  color: green;
+}
+
+.share-wrapper ul.social li .linkedin {
+  color: #0D77B7;
+}
+
+.share-wrapper ul.social li .google {
+  color: #DF4B38;
+}
+
+.share-wrapper ul.social li .pinterest {
+  color: #CD2129;
+}
+
+.share-wrapper ul.social li .youtube {
+  color: #CF2227;
+}
+
+.share-wrapper ul.social li .instagram {
+  color: #305C85;
+}
+
+
+.social {
+  display: none;
+  /* Initially hidden */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social.active {
+  display: block;
+  /* Show when active */
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: auto;
+  color: red;
+}

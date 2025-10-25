@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Form Container */
+        .form-container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Form Title */
+        .form-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Form Inputs */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            outline: none;
+        }
+
+        /* Submit Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2 class="form-title">Register Now</h2>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter Mobile" required>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="Bihar">Bihar</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="" disabled selected>Select City</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Pincode" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Address" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

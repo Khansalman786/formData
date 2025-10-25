@@ -1,0 +1,210 @@
+
+/* ====== TOP HAMBURGER BUTTON (RIGHT CORNER) ====== */
+.top-hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    /* background-color: #fff;
+    border: 1px solid #eee; */
+    color: #ea232e;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tp-offcanvas-open-btn {
+    display: none;
+}
+
+/* ====== RIGHT-SIDEBAR WALA NAYA CSS ====== */
+
+/* --- Neeche wala Navigation Bar --- */
+.my-mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Lower than overlay */
+}
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    text-decoration: none;
+    font-size: 12px;
+}
+.mobile-nav-item i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.mobile-nav-item:hover {
+    color: #d91c22;
+}
+
+/* --- Side se khulne wala Menu Panel (Overlay) --- */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1001; /* Highest z-index */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.mobile-menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* --- Sidebar Panel (Right se aayega) --- */
+.mobile-menu-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92%;
+    max-width: 354px;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-menu-overlay.open .mobile-menu-panel {
+    transform: translateX(0);
+}
+
+/* --- Menu ka Header (Logo aur Close Button) --- */
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    flex-shrink: 0;
+}
+.mobile-menu-header .logo img {
+    max-width: 187px;
+}
+.mobile-menu-header .close-btn {
+    background-color: #ECECEC;
+    color: #f15c5c;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    /* border-radius: 50%; */
+}
+
+/* --- Menu ke Links ki List --- */
+.mobile-menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Enables scrolling for long menus */
+    flex-grow: 1;
+}
+.mobile-menu-links li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 15px;
+    color: #525252;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+.mobile-menu-links li a:hover {
+    background-color: #f9f9f9;
+}
+
+/* --- Arrow Icon Styling --- */
+.arrow-icon {
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Submenu (Andar wali list) - APPLIES TO .submenu and .tp-submenu --- */
+.submenu, .tp-submenu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    max-height: 0; /* Shuru mein band rakhein */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    background-color: #ffffff !important
+}
+
+/* --- FIX FOR MEGA MENU ON MOBILE --- */
+.mobile-menu-panel .tp-mega-menu,
+.mobile-menu-panel .tp-submenu {
+    position: static; /* Removes absolute positioning that causes overlap */
+    display: block; /* Ensure it's not display:none from desktop styles */
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    background-color: #f8f8f8; /* Match other submenus */
+}
+
+.submenu a, .tp-submenu a {
+    padding-left: 30px !important;
+    font-size: 14px !important;
+    color: #525252 !important;
+    border-color: #eee;
+}
+.tp-submenu .mega-menu-title {
+font-size: 15px !important;
+       color: #525252 !important;
+}
+
+/* --- Style for OPEN Submenus --- */
+.mobile-menu-links li.submenu-open > a {
+    color: #d91c22;
+}
+.mobile-menu-links li.submenu-open > a .arrow-icon {
+    background-color: #d91c22;
+    color: white;
+    border-color: #d91c22;
+    transform: rotate(90deg);
+}
+.mobile-menu-links li.submenu-open > ul {
+    max-height: 1000px; /* Badi value de dein taaki saare items dikh sakein */
+}
+
+/* MOBILE MENU BUTTON FIX */
+.my-mobile-bottom-nav a#mobile-menu-trigger {
+    display: flex !important; /* 'flex' use karein taaki icon aur text sahi se align ho */
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+}

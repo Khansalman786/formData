@@ -1,0 +1,129 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    color: #ffffff;
+    font-size: 32px;
+    margin: auto;
+}
+
+.icon-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.card {
+    border: none !important;
+    border-radius: 12px;
+    /* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    color: #D42B31;
+}
+
+.card-text {
+    font-size: 16px;
+    text-align: center;
+    color: #555;
+}
+
+.highlight {
+    font-weight: 300;
+    color: #262626;
+    margin-bottom: 11px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #262626;
+    /* Darker text for readability */
+}
+
+.card-text strong {
+    font-weight: 600;
+    color: #e9262d;
+    /* Highlighted color from your logo */
+}
+
+.left-text {
+    text-align: left;
+}
+
+.left-text1 {
+    text-align: center;
+}
+
+
+
+
+
+.image-card {
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.animated-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.red-border {
+    border: 10px solid #e9262d
+}
+
+.infinite-animation {
+    animation: floatZoom 5s ease-in-out infinite;
+}
+
+@keyframes floatZoom {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}

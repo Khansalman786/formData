@@ -1,0 +1,268 @@
+.about-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    position: relative;
+
+    background: url("../images/home-banner/clinical-solutions-bg-1.jpg");
+    background-size: cover;
+    max-width: 100%;
+}
+
+.brulon-title-about {
+    font-size: 35px;
+    font-weight: 700 !important;
+    color: black;
+}
+
+
+.smile-healthy {
+    font-size: 32px !important;
+    padding-right: 74px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.brulon-about {
+    padding: 5px 20px;
+    font-size: 30px;
+}
+
+.about-content {
+    max-width: 100%;
+    padding: 30px 20px;
+    background: red;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        transform: skew(-20deg);
+        padding: 30px 30px;
+    }
+
+    .brulon-about {
+        padding: 5px 70px;
+    }
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .stats-container {
+        padding-left: 60px;
+    }
+
+
+}
+
+.stats1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 70px;
+}
+
+.stats2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+.stats3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 30px;
+}
+
+.stats1::after {
+    content: "";
+    position: absolute;
+    width: 46%;
+    height: 51px;
+    right: -2px;
+    top: 36px;
+    opacity: 2;
+    background: #f8f9fa;
+}
+
+.stats2::after {
+    content: "";
+    position: absolute;
+    width: 46%;
+    height: 51px;
+    right: -2px;
+    top: 36px;
+    opacity: 2;
+    background: #f8f9fa;
+}
+
+.stats3::after {
+    content: "";
+    position: absolute;
+    width: 46%;
+    height: 51px;
+    right: -2px;
+    top: 36px;
+    opacity: 2;
+    background: #f8f9fa;
+}
+
+.stats1 span {
+    font-size: 28px;
+    color: black;
+    top: -15px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.stats2 span {
+    font-size: 28px;
+    color: black;
+    top: -15px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.stats3 span {
+    font-size: 28px;
+    color: black;
+    top: -15px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.stats1 p {
+    margin: 0px;
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+    width: 152px;
+    position: absolute;
+    left: 26%;
+    top: 63%;
+    z-index: 999;
+    line-height: normal;
+    transform: translateY(-50%);
+}
+
+.stats2 p {
+    margin: 0px;
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+    width: 152px;
+    position: absolute;
+    left: 26%;
+    top: 63%;
+    z-index: 999;
+    line-height: normal;
+    transform: translateY(-50%);
+}
+
+.stats3 p {
+    margin: 0px;
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+    width: 152px;
+    position: absolute;
+    left: 26%;
+    top: 63%;
+    z-index: 999;
+    line-height: normal;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+    .brulon-about {
+        font-size: 24px;
+        padding: 5px 10px;
+
+    }
+
+    .smile-healthy {
+        padding: 0px 47px 0px 0px;
+        font-size: 18px !important;
+    }
+
+    .about-content {
+        padding: 20px 10px;
+        /* transform: skew(-2deg); */
+    }
+
+    .stats-container {
+        padding-left: 10px;
+        align-items: center;
+    }
+
+    .stats1 p {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .stats2 p {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .stats3 p {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .stats2 {
+
+        left: 0px;
+    }
+
+    .stats1 {
+
+        left: 0px;
+    }
+
+    .stats3 {
+
+        left: 0px;
+    }
+}

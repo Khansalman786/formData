@@ -1,0 +1,146 @@
+.custom-search-wrapper {
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-box-vertical input {
+    padding: 8px;
+    width: 100%;
+}
+
+.custom-search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.custom-search-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.custom-search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-search-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-search-form button {
+    background: #e9262d;
+    color: white;
+    border: none;
+    padding: 0 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.custom-result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.custom-result-item:hover {
+    background-color: #f5f5f5;
+}
+
+.custom-result-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.custom-result-details h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.custom-result-details p {
+    margin: 4px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.no-results {
+    padding: 10px;
+    text-align: center;
+    color: #999;
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.input-wrapper input[type="text"] {
+    width: 100%;
+    padding-right: 35px;
+    /* leave space for close icon */
+}
+
+.close-inside-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+

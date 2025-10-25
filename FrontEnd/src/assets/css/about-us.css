@@ -1,0 +1,134 @@
+
+
+        body {
+            /* font-family: sans-serif; */
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        .lupin-container {
+            max-width: 1150px;
+            margin: 0 auto;
+            /* padding: 20px; */
+            text-align: center;
+        }
+
+        .lupin-about-header {
+            padding: 0px 0;
+        }
+
+        .lupin-about-header h1 {
+            color: #e9262d;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .lupin-about-header p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 0;
+        }
+
+        .lupin-about-content {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            /* padding: 0px 100px; */
+        }
+
+        .lupin-read-more {
+            color: #e9262d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lupin-our-story-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .lupin-story-text {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .lupin-story-text h2 {
+            color: #e9262d;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .lupin-story-text p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+
+
+        .lupin-explore-button:hover {
+            background-color: #f7575e;
+
+        }
+
+        .lupin-explore-button:hover a {
+            transform: scaleX(3px);
+        }
+
+        .lupin-story-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 20px; */
+        }
+
+        .lupin-story-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .btn-style-one {
+            position: relative;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            padding: 10px 20px !important;
+            border-radius: 50px;
+            font-weight: 400;
+            overflow: hidden;
+            color: var(--theme-color-light);
+            background-color: var(--theme-color1);
+            text-transform: capitalize;
+        }
+
+
+        @media (max-width: 768px) {
+            .lupin-our-story-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .lupin-story-text,
+            .lupin-story-image {
+                padding: 10px;
+            }
+
+            .lupin-story-text {
+                order: 2;
+            }
+
+            .lupin-story-image {
+                order: 1;
+            }
+        }
+
+

@@ -1,0 +1,72 @@
+/* html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+} */
+
+.custom-radios div {
+  display: inline-block;
+}
+
+.custom-radios .shade {
+  display: inline-block;
+}
+
+.custom-radios input[type=radio] {
+  display: none;
+}
+.custom-radios input[type=radio] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: grid;
+  text-align: center;
+  font-weight: 600;
+}
+.custom-radios input[type=radio] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #E0E2E3;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 35px;
+}
+.custom-radios input[type=radio] + label span img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.custom-radios input[type=radio]#color-1 + label span {
+  background-color: #e5d8b8;
+}
+.custom-radios input[type=radio]#color-2 + label span {
+  background-color: #e8d8b6;
+}
+.custom-radios input[type=radio]#color-3 + label span {
+  background-color: #e6d59f;
+}
+.custom-radios input[type=radio]#color-4 + label span {
+  background-color: #e2d7c5;
+}
+
+
+.custom-radios input[type=radio]#color-5 + label span {
+  background-color: #dfd4b4;
+}
+
+.custom-radios input[type=radio]:checked + label span img {
+  opacity: 1;
+}

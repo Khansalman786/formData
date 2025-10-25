@@ -1,0 +1,351 @@
+.card {
+    flex: 1;
+    margin: 20px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    /* 圓角 */
+    box-shadow: 0 0 20px rgba(51, 70, 80, 0.5);
+    /* 外陰影 */
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+    /* 圖片的灰階半透明漸層遮罩 */
+    z-index: 0;
+    /* z軸的位置 */
+}
+
+a.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* z軸的位置 */
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 讓圖片適應容器寬高，且保持原有比例，但部分内容可能被剪切。 */
+    transition: transform 3s ease;
+    /* ease 為漸起始值較慢，中間速率加快，結尾趨 */
+    position: relative;
+    z-index: -1;
+    /* z軸的位置 */
+}
+
+.info {
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0;
+    padding: 20px;
+    color: #ffffff;
+    transition: background-color 1.5s ease;
+}
+
+h2.title {
+    transition: color 1s ease;
+    margin-bottom: 12px;
+}
+
+.date {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.detail {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s ease, opacity 1s ease;
+}
+
+.detail p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.btn-more {
+    width: 80px;
+    display: block;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    padding: 6px 6px;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.card:hover .img {
+    transform: scale(1.2);
+}
+
+.card:hover .info {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card:hover .detail {
+    max-height: 78px;
+    opacity: 1;
+}
+
+.card:hover h2.title {
+    color: #ffc107;
+}
+
+
+/* new page */
+
+
+
+.ceo-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.breadcrumb-section {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.about-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: #D42B31;
+}
+
+.highlight {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 13px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.about-list i {
+    color: #D42B31;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #D42B31;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #D42B31;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.site-breadcrumb {
+    border-bottom: 1px solid #ddd;
+}
+
+.mt-20 {
+    margin-top: 80px !important;
+}
+
+.our-team {
+    text-align: center;
+    position: relative;
+}
+
+.our-team:hover {
+    cursor: pointer;
+}
+
+.our-team img {
+    width: 100%;
+    height: auto;
+}
+
+.our-team .team-content {
+    width: 100%;
+    height: auto;
+    background: #ecdfbd;
+    padding: 15px 0;
+    border-left: 5px solid #fb6648;
+    box-shadow: 0 15px 25px 0 rgba(3, 7, 15, 0.1);
+    position: absolute;
+    bottom: -67;
+    right: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .team-content {
+    background: #d42b31;
+}
+
+.our-team .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5e3448;
+    text-transform: capitalize;
+    margin: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .title {
+    color: #ecdfbd;
+    margin-bottom: 10px;
+}
+
+.our-team .post {
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    color: #fb6648;
+    text-transform: capitalize;
+    height: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .post {
+    height: 40px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.our-team .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-60%);
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+    transform: translateY(50%);
+    opacity: 1;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ecdfbd;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #5e3448;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team .social li a:hover {
+    color: #ecdfbd;
+    background: #5e3448;
+}
+
+@media only screen and (max-width: 990px) {
+    .our-team {
+        margin-bottom: 74px;
+    }
+
+    .mt-20 {
+        margin-top: 50px !important;
+    }
+
+}
+
+.Download-bron {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tp-blog-list-thumb {
+    width: 100% !important;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.tp-blog-list-thumb img {
+    /* max-width: 100%; */
+    width: 100% !important;
+    height: 100%;
+}
+
+.tp-blog-tag>span {
+    color: #ff0909 !important;
+}

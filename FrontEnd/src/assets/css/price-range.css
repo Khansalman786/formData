@@ -1,0 +1,70 @@
+.custom-price-input .form-control,
+.custom-price-input .input-group-text {
+    height: 48px;
+    /* or 40px, adjust to your preference */
+    font-size: 14px;
+    padding: 12px 10px;
+    border-radius: 0.375rem;
+}
+
+.custom-price-input .input-group-text {
+    background-color: #f8f9fa;
+    border-right: 0;
+}
+
+.custom-price-input .form-control:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+}
+
+.custom-price-input .form-control,
+.custom-price-input .input-group-text {
+    height: 48px;
+    font-size: 14px;
+    padding: 12px 10px;
+    border-radius: 0.375rem;
+}
+
+.custom-price-input .input-group-text {
+    background-color: #f8f9fa;
+    border-right: 0;
+}
+
+.custom-price-input .form-control:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+}
+
+.similar-product img {
+    height: 300px;
+
+}
+
+
+.custom-radios span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.custom-radios img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.select-dropdown select {
+    width: 100%;
+    /* container ke full width tak badhega */
+    min-width: 100%;
+    /* ya fixed width like 200px */
+}
+
+.herat-icons {
+    font-size: 18px;
+}
